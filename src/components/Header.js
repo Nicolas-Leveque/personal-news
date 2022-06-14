@@ -1,6 +1,10 @@
+import { Typography } from '@mui/material';
+
 const Header = () => {
   return (
-    <header className="w-screen, h-24, p-5, bg-sky-500">Personal news</header>
+    <>
+      <Typography variant='h1' sx={{ textAlign: 'center', marginBottom: '20px', color: 'white' }}>Personal News</Typography>
+    </>
   );
 }
 

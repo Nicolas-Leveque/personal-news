@@ -5,11 +5,11 @@ import CarMedia from '@mui/material/CardMedia'
 
 const Article = ({ article }) => {
   return (
-    <Card variant='outlined' sx={{ maxWidth: 256, margin: 5, borderRadius: '15px' }}>
-      <CarMedia
+    <Card variant='outlined' sx={{ height: 270, width: 300, margin: 5, borderRadius: '15px' }}>
+      {article.image && <CarMedia
         component='img'
         height='150'
-        image={article.image} />
+        image={article.image} />}
       <CardActions>
         <a href={article.url}>{article.title}</a>
       </CardActions>
