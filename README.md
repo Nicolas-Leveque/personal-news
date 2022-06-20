@@ -11,7 +11,7 @@ J'ai créé cet app pour obtenir en un instant les grand titre des principaux jo
 Cette app est alimentée par une api que vous trouverez ici: https://github.com/Nicolas-Leveque/webscrapper-api 
 Cette api va charger la page d'accueil et extraire les titres, liens et si possible une image d'illustration ( en cas d'impossibillité de charger une image, l'api utilisera une image de remplacement correspondant au site )
 
-##Installation
+## Installation
 
 Après avoir cloné le repo il suffit d'installer les dépendances:
 
