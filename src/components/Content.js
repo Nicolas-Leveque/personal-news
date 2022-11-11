@@ -9,37 +9,37 @@ const Content = () => {
 
   const [data, setData] = useState([]);
   const scrapMonde = () => {
-    fetch('https://backend-personal-news.herokuapp.com/api/lemonde')
+    fetch('https://webscrapper-newspapers.onrender.com/api/lemonde')
       .then(res => res.json())
       .then(data => setData(data))
       .catch(err => console.log(err));
   }
   const scrapMinutes = () => {
-    fetch('https://backend-personal-news.herokuapp.com/api/20minutes')
+    fetch('https://webscrapper-newspapers.onrender.com/api/20minutes')
       .then(res => res.json())
       .then(data => setData(data))
       .catch(err => console.log(err));
   }
   const scrapBfm = () => {
-    fetch('https://backend-personal-news.herokuapp.com/api/bfmtv')
+    fetch('https://webscrapper-newspapers.onrender.com/api/bfmtv')
       .then(res => res.json())
       .then(data => setData(data))
       .catch(err => console.log(err));
   }
   const scrapFigaro = () => {
-    fetch('https://backend-personal-news.herokuapp.com/api/lefigaro')
+    fetch('https://webscrapper-newspapers.onrender.com/api/lefigaro')
       .then(res => res.json())
       .then(data => setData(data))
       .catch(err => console.log(err));
   }
   const scrapFranceTV = () => {
-    fetch('https://backend-personal-news.herokuapp.com/api/franceTV')
+    fetch('https://webscrapper-newspapers.onrender.com/api/franceTV')
       .then(res => res.json())
       .then(data => setData(data))
       .catch(err => console.log(err));
   }
   const scrapFrance24 = () => {
-    fetch('https://backend-personal-news.herokuapp.com/api/france24')
+    fetch('https://webscrapper-newspapers.onrender.com/api/france24')
       .then(res => res.json())
       .then(data => setData(data))
       .catch(err => console.log(err));
