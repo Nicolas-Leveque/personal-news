@@ -2,12 +2,11 @@ import { useState } from 'react';
 import { Box, Container } from '@mui/system';
 import { ButtonGroup, Button } from '@mui/material';
 import Article from './Article';
-import Header from './Header';
 
 
 const Content = () => {
 
-  const [data, setData] = useState([]);
+  const [ data, setData ] = useState([]);
   const scrapMonde = () => {
     fetch('https://webscrapper-newspapers.onrender.com/api/lemonde')
       .then(res => res.json())
@@ -46,9 +45,8 @@ const Content = () => {
   }
 
   return (
-    <Container maxWidth='false' sx={{ minHeight: '100vh', bgcolor: '#424242', height: '100%' }}>
-      <Header />
-      <Box sx={{ display: 'flex', justifyContent: 'center' }}>
+    <Container maxWidth="false">
+      <Box sx={{ display: 'flex', justifyContent: 'center', margin: 2 }}>
         <ButtonGroup sx={{}}>
           <Button variant='contained' onClick={scrapMonde}>Le Monde</Button>
           <Button variant='contained' onClick={scrapMinutes}>20 Minutes</Button>

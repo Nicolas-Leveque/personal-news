@@ -1,12 +1,12 @@
-import Content from "./components/Content";
 import { CssBaseline } from "@mui/material";
+import Layout from "./components/Layout";
 
-function App() {
+function App () {
   return (
-    <div>
+    <>
       <CssBaseline />
-      <Content />
-    </div>
+      <Layout />
+    </>
   );
 }
 
