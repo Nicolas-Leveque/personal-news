@@ -45,8 +45,8 @@ const Content = () => {
   }
 
   return (
-    <Container>
-      <Box sx={{ display: 'flex', justifyContent: 'center' }}>
+    <Container maxWidth="false">
+      <Box sx={{ display: 'flex', justifyContent: 'center', margin: 2 }}>
         <ButtonGroup sx={{}}>
           <Button variant='contained' onClick={scrapMonde}>Le Monde</Button>
           <Button variant='contained' onClick={scrapMinutes}>20 Minutes</Button>

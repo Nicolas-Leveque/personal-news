@@ -3,10 +3,10 @@ import Layout from "./components/Layout";
 
 function App () {
   return (
-    <div>
+    <>
       <CssBaseline />
       <Layout />
-    </div>
+    </>
   );
 }
 
